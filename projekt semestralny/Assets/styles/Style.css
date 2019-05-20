@@ -1,8 +1,11 @@
 @charset "utf-8";
 /* Global Styles */
-a:hover {
-	color: rgba(255,255,255,1.00);
+a{
+	color: rgba(107,97,97,1.00);
+	text-decoration: none;
+	font-size: 11px;
 }
+
 /*header*/
 header {
 	font-family: 'Montserrat', sans-serif;
@@ -110,13 +113,14 @@ body
 	left: -35px;
 	padding: 12px;
 	margin-top: 12px;
-	border-style: groove;
-	border-color: #D45759;
+	text-align: left;
+
+	
 }
 /* Product rows for catalog */
 #content .mainContent .productRow {
 	overflow: auto;
-	color: rgba(146,146,146,1.00);
+	color: rgb(0, 0, 0);
 }
 /* Each product Information in the catalog */
 .mainContent .productRow .productInfo {
@@ -144,6 +148,16 @@ body
 	color: rgba(146,146,146,1.00);
 	white-space: pre-wrap;
 }
+.productRow .productInfo .townName {
+	position: relative;
+	top: -12px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: rgb(0, 0, 0);
+	white-space: pre-wrap;
+}
 /* Buy button for products in catalog */
 .productRow .productInfo .buyButton {
 	position: relative;
@@ -157,10 +171,21 @@ body
 	text-transform: uppercase;
 	margin-top: 8px;
 }
+.productRow .productInfo .townButton {
+	position: relative;
+	top: -28px;
+	width: 84%;
+	background-color: rgb(46, 211, 60);
+	height: 35px;
+	color: rgb(0, 0, 0);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
 /* footer */
 #mainWrapper footer {
 	clear: both;
-	overflow: auto;
 	background-color: rgba(208,207,207,1.00);
 	font-family: source-sans-pro, sans-serif;
 	font-style: normal;
@@ -171,11 +196,12 @@ body
 	text-align: center;
 	padding-bottom: 22px;
 	padding-right: 22px;
-	heigh: 15px;
+	height: 15px;
 }
 /*Each footer content */
 #mainWrapper footer div {
 	width: 27%;
+	
 	float: left;
 	padding-left: 4%;
 	padding-right: 2%;
@@ -194,7 +220,7 @@ footer div a {
 	width: 100%;
 }
 /*Links in sidebar */
-.sidebar #menubar .menu ul li a {
+.sidebar #menubar .menu a ul li  {
 	color: rgba(146,146,146,1.00);
 	text-decoration: none;
 }
@@ -233,6 +259,8 @@ footer .footerlinks {
 	overflow: auto;
 	padding-left: 12%;
 	padding-top: 0px;
+	margin-left: 1px;
+	
 }
 /* horizontal separators in sidebar */
 #content .sidebar hr {
@@ -400,7 +428,6 @@ header #headerLinks a {
 	text-align: justify;
 	padding-bottom: 16px;
 	overflow: auto;
-	heigh: 15px;
 }
 /* Unordered list for menu elements */
 .menu ul {
@@ -423,10 +450,14 @@ header #headerLinks a {
 
 #copyright
 {
+	height: auto;
 	width: 140px;
 	margin-left: 60vw;
 }
 #stuff
 {
 	width: 15vw;
+}
+#menubartitle{
+	font-size: 14px;
 }
